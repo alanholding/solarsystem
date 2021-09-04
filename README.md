@@ -38,3 +38,8 @@ You may need to stop / restart the MIDI clock on your DAW / controller to get th
 * Change the voltages in the `midi_note_to_model` dictionary to change the baseline sounds.
 * Use other modulation into the Plaits to really get crazy.
 
+## 02 Rainfall Triggers
+
+Every sixteenth MIDI clock note, four integers countdown by one from random starting values. When a countdown's value is less than zero, Sol sends a trigger from the countdown's associated output (1, 2, 3 or 4) and sets a new random starting value for that countdown.
+
+This happens forever until the power runs out.
